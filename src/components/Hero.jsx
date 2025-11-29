@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 // Preload first image for instant load
 const preloadImages = [
-  "/assets/7.jpg",
-  "/assets/download (1).jpeg",
-  "/assets/10.jpg",
+  "/optimized/mobile/7.webp",
+  "/optimized/mobile/download (1).webp",
+  "/optimized/mobile/10.webp",
 ];
 
 // Preload images
