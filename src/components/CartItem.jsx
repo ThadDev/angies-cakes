@@ -23,14 +23,14 @@ export default function CartItem({ item }) {
       <div className="flex items-center gap-2">
         <button
           onClick={() => decreaseQuantity(item.id)}
-          className="p-1 bg-gray-200 rounded hover:bg-gray-300"
+          className="p-1 bg-gray-200 rounded cursor-pointer hover:bg-gray-300"
         >
           <FaMinus />
         </button>
         <span>{item.quantity}</span>
         <button
           onClick={() => addToCart(item)}
-          className="p-1 bg-gray-200 rounded hover:bg-gray-300"
+          className="p-1 bg-gray-200 rounded hov cursor-pointer er:bg-gray-300"
         >
           <FaPlus />
         </button>
@@ -39,7 +39,7 @@ export default function CartItem({ item }) {
       {/* Delete Button */}
       <button
         onClick={() => removeFromCart(item.id)}
-        className="ml-4 p-1 text-red-600 hover:text-red-800"
+        className="ml-4 p-1 text-red-600 hover:text-red-800 cursor-pointer"
       >
         <FaTrash />
       </button>

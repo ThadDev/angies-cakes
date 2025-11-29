@@ -1,32 +1,6 @@
-// import { useCart } from "../context/CartContext";
-
-// export default function CartPage() {
-//   const { cartItems, removeFromCart, clearCart } = useCart();
-
-//   return (
-//     <div className="p-5">
-//       <h1 className="text-2xl font-bold mb-4">Your Cart</h1>
-//       {cartItems.length === 0 ? (
-//         <p>Cart is empty</p>
-//       ) : (
-//         <>
-//           {cartItems.map(item => (
-//             <div key={item.id} className="flex justify-between mb-3">
-//               <p>{item.name} x {item.quantity}</p>
-//               <button onClick={() => removeFromCart(item.id)}>Remove</button>
-//             </div>
-//           ))}
-//           <button onClick={clearCart} className="mt-4 bg-red-500 text-white px-4 py-2 rounded">
-//             Clear Cart
-//           </button>
-//         </>
-//       )}
-//     </div>
-//   );
-// }
-
 import { useCart } from "../context/CartContext";
 import CartItem from "../components/CartItem";
+import { Link } from "react-router-dom";
 
 export default function CartPage() {
   const { cartItems, clearCart } = useCart();
@@ -38,8 +12,8 @@ export default function CartPage() {
   );
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Your Cart</h1>
+    <div className="p-6 ">
+      <h1 className="text-2xl text-center font-bold mb-6">Your Cart</h1>
 
       {cartItems.length === 0 ? (
         <p className="text-gray-600">Your cart is empty.</p>
@@ -53,13 +27,17 @@ export default function CartPage() {
             <h2 className="text-xl font-bold">Total: ₦{totalPrice}</h2>
             <button
               onClick={clearCart}
-              className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+              className="bg-red-500 text-white text-center px-4 py-2 rounded hover:bg-red-600"
             >
               Clear Cart
             </button>
           </div>
         </>
       )}
+      <Link className={` justify-center mt-[3em] ${cartItems.length === 0 ? "hidden":"flex" }`} to={"/checkout"}>
+      <button className="border bg-[var(--primary)] rounded-md cursor-pointer hover:bg-[var(--hover)] px-6 py-2">Place Order</button>
+      </Link>
+      
     </div>
   );
 }

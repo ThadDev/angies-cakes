@@ -72,8 +72,11 @@ const HomePage = () => {
 
 </div>
 
-<section>
-  <Products limit={8} title={"Featured products"} />
+<section className="flex flex-col justify-center items-center">
+  <Products limit={8} title={"Top Picks"} />
+  <Link to={"/products"}>
+  <button  className="text-[var(--text)] text-[1rem] hover:text-[var(--accent)] cursor-pointer font-bold">More...</button>
+  </Link>
 </section>
 
     </>

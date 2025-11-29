@@ -32,7 +32,7 @@ export default function ProductCard({ product }) {
       </Link>
       <button
         onClick={handleAddToCart}
-        className="bg-[var(--primary)] text-[var(--text)] hover:bg-[var(--hover)] hover:text-[var(--background)] cursor-pointer px-4 py-2 rounded-xl hover:bg-hover transition"
+        className="bg-[var(--primary)] text-[var(--text)] hover:bg-[var(--hover)]  cursor-pointer px-4 py-2 rounded-xl hover:bg-hover transition"
       >
         Add to Cart
       </button>

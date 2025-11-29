@@ -8,7 +8,7 @@ export default function Toast({ message, duration }) {
     const decrement = (interval / duration) * 100;
 
     const timer = setInterval(() => {
-      setProgress(prev => {
+      setProgress((prev) => {
         if (prev <= 0) {
           clearInterval(timer);
           return 0;
@@ -21,10 +21,19 @@ export default function Toast({ message, duration }) {
   }, [duration]);
 
   return (
-    <div className="fixed bottom-6 right-6 bg-green-600 backdrop-blur-md shadow-lg rounded-md px-4 py-3 w-72 z-50 overflow-hidden">
+    <div
+      className={`fixed bottom-6 right-6 ${
+        ["all", "empty"].some((word) => message.includes(word))
+          ? "bg-red-600"
+          : "bg-green-600"
+      } backdrop-blur-md shadow-lg rounded-md px-4 py-3 w-72 z-50 overflow-hidden`}
+    >
       <p className="text-white">{message}</p>
       {/* Animated progress bar */}
-      <div className="h-1 bg-primary rounded-md" style={{ width: `${progress}%`, transition: "width 0.01s linear" }}></div>
+      <div
+        className="h-1 bg-primary rounded-md"
+        style={{ width: `${progress}%`, transition: "width 0.01s linear" }}
+      ></div>
     </div>
   );
 }

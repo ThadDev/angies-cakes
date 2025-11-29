@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './css/App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import NavBar from './components/NavBar'
@@ -12,6 +11,7 @@ import CathegoryFilter from './components/BrowseCathegory'
 import { useToast } from "./context/ToastContext";
 import Toast from "./components/Toast";
 import ScrollToTop from './components/ScrollToTop'
+import OrderPage from './pages/Checkout'
 
 
 
@@ -31,6 +31,7 @@ function App() {
         <Route path='/cart' element={<CartPage/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/product-details/:id' element={<ProductDetail/>}/>
+        <Route path='/checkout' element={<OrderPage/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       <CathegoryFilter/>

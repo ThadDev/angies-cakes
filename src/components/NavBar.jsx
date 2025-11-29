@@ -103,7 +103,10 @@ const NavBar = () => {
     <>
       <header className="flex items-center justify-between px-6 py-6 sticky w-full top-0 bg-[#FFF3E0] z-50">
         {/* Logo */}
+        <Link to={"/"}>
         <div className="logo text-[1.5rem] font-poppins font-bold">Angies</div>
+        </Link>
+        
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex">
@@ -172,14 +175,14 @@ const NavBar = () => {
 
       {/* Mobile Search Input */}
       {mobileSearchOpen && (
-        <div className="md:hidden bg-[#FFF3E0] px-6 py-4 w-full shadow-md fixed top-[5em] left-0 z-40">
+        <div className="md:hidden bg-[#FFF3E0] px-6 py-4 items-center justify-center shadow-md fixed top-[5em] left-0 z-40">
           <form onSubmit={handleSearchSubmit} className="flex gap-2">
             <input
               type="text"
               placeholder="Search products..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="flex-1 px-4 py-2 rounded-full text-black border"
+              className=" px-4 py-2 rounded-full text-black border"
             />
 
           </form>
@@ -205,13 +208,13 @@ const NavBar = () => {
           ))}
         </ul>
         <div className="flex gap-4">
-          <a href="">
+          <a href="https://www.instagram.com/angies_cakesandtreats/">
             <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="">
+          <a href="https://l.instagram.com/?u=https%3A%2F%2Fdm.wa.link%2F1bd6ih%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnkpSF6R0XQlQvYx7RXPBO8OP8-D6OeyTbN7k3S90Sq69D9xdzoi7w7n23dTA_aem_Z12mmdmsjawXwTt1tznrLQ&e=AT1GvAQO3LAIUalxLPw3RgVCgh6k4InyR7S5dQ2ISgw9dezA2f9VqzWSlDl3MEkkgEtLYDNssliyfzf0w2ltUjt24pXyT4w734GHF9p4cg">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
           <a href="">
