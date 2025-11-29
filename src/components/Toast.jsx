@@ -23,7 +23,7 @@ export default function Toast({ message, duration }) {
   return (
     <div
       className={`fixed bottom-6 right-6 ${
-        ["all", "empty"].some((word) => message.includes(word))
+        ["required", "empty"].some((word) => message.includes(word))
           ? "bg-red-600"
           : "bg-green-600"
       } backdrop-blur-md shadow-lg rounded-md px-4 py-3 w-72 z-50 overflow-hidden`}
