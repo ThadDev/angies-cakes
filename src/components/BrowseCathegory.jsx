@@ -11,7 +11,7 @@ const CathegoryFilter = () => {
   <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
     
     <Link
-      to="/products?category=bentocake"
+      to="/products?category=bento cakes"
       className="flex flex-col items-center bg-white/30 backdrop-blur-md p-3 rounded-xl shadow hover:scale-105 transition"
     >
       <img
@@ -25,7 +25,7 @@ const CathegoryFilter = () => {
     </Link>
 
     <Link
-      to="/products?category=birthdaycake"
+      to="/products?category=birthday cakes"
       className="flex flex-col items-center bg-white/30 backdrop-blur-md p-3 rounded-xl shadow hover:scale-105 transition"
     >
       <img

@@ -7,16 +7,41 @@ export default function CartItem({ item }) {
   return (
     <div className="flex items-center justify-between p-3 bg-white/20 backdrop-blur-md rounded-lg shadow mb-3">
       {/* Image */}
-      <img
-        src={item.img}
+      {/* <img
+        src={`/optimized/mobile/${item.img}.webp`}   // fallback / default
+  srcSet={`
+    /optimized/mobile/${item.img}.webp 480w,
+    /optimized/tablet/${item.img}.webp 768w,
+    /optimized/desktop/${item.img}.webp 1200w
+  `}
+
+   sizes="
+    (max-width: 480px) 100vw,
+    (max-width: 768px) 50vw,
+    33vw
+  "
+  loading="lazy"
         alt={item.name}
         className="w-16 h-16 object-cover rounded-md"
-      />
+      /> */}
+      <img
+  src={`/optimized/mobile/${item.img}.webp`}
+  srcSet={`/optimized/mobile/${item.img}.webp 480w,
+          /optimized/tablet/${item.img}.webp 768w,
+          /optimized/desktop/${item.img}.webp 1200w`}
+  sizes="(max-width: 480px) 100vw,
+         (max-width: 768px) 50vw,
+         33vw"
+  loading="lazy"
+  alt={item.name}
+  className="w-16 h-16 object-cover rounded-md"
+/>
+
 
       {/* Name & Price */}
       <div className="flex-1 ml-4">
         <h3 className="font-bold text-[1rem]">{item.name}</h3>
-        <p className="text-gray-700 text-sm">₦{item.price} x {item.quantity}</p>
+        <p className="text-gray-700 text-sm">₦{Number(item.price).toLocaleString()} x {item.quantity}</p>
       </div>
 
       {/* Quantity Controls */}

@@ -24,7 +24,7 @@ export default function CartPage() {
           ))}
 
           <div className="mt-6 flex justify-between items-center">
-            <h2 className="text-xl font-bold">Total: ₦{totalPrice}</h2>
+            <h2 className="text-xl font-bold">Total: ₦{Number(totalPrice).toLocaleString()}</h2>
             <button
               onClick={clearCart}
               className="bg-red-500 text-white text-center px-4 py-2 rounded hover:bg-red-600"
