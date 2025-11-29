@@ -72,7 +72,7 @@ export default function HeroCarousel() {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 5000 }}
-        preloadimages="true" // preload slides
+        preloadImages={true} // preload slides
         lazy={false} // disable lazy to force instant load
       >
         {slides.map((slide, idx) => (
