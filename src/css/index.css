@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary & Buttons */
+  --primary: #FF6B6B;       /* Soft Red */
+  
+  /* Secondary / Accent */
+  --accent: #FFD93D;        /* Sunny Yellow */
+  
+  /* Backgrounds */
+  --background: #FFF3E0;    /* Cream */
+  
+  /* Text */
+  --text: #3E3E3E;          /* Dark Gray */
+  
+  /* Hover / Highlights */
+  --hover: #FF8566;         /* Peachy Orange */
+}
+body{
+    font-family: "poppins";
+    background-color: var(--background);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+.fa-brands{
+     color: var(--primary);
+  font-size: 34px;
+  margin-bottom: 12px solid var(--primary);
+}

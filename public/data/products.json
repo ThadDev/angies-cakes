@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Chocolate Fudge Cake",
+    "category": "cakes",
+    "img": "https://i.pinimg.com/1200x/6b/13/78/6b13781197d8392e2149df5f57beb6f5.jpg",
+    "price": 4500,
+    "description": "Decadent chocolate cake topped with rich fudge frosting."
+  },
+  {
+    "id": 2,
+    "name": "Vanilla Cream Cake",
+    "category": "cakes",
+    "img": "https://i.pinimg.com/736x/9c/54/70/9c5470ced3fb6be986304a3a78297791.jpg",
+    "price": 4200,
+    "description": "Soft vanilla sponge layered with creamy buttercream."
+  },
+  {
+    "id": 3,
+    "name": "Red Velvet Cake",
+    "category": "cakes",
+    "img": "https://i.pinimg.com/736x/78/2d/27/782d27b0aa996c9763410951381c4e3d.jpg",
+    "price": 4800,
+    "description": "Classic red velvet cake with smooth cream cheese icing."
+  },
+  {
+    "id": 4,
+    "name": "Strawberry Shortcake",
+    "category": "cakes",
+    "img": "https://i.pinimg.com/1200x/42/06/91/42069182de34e64409ef226affe3365d.jpg",
+    "price": 5000,
+    "description": "Light sponge cake filled with fresh strawberries and cream."
+  },
+  {
+    "id": 5,
+    "name": "Black Forest Cake",
+    "category": "cakes",
+    "img": "https://via.placeholder.com/300x300?text=Black+Forest+Cake",
+    "price": 5200,
+    "description": "Moist chocolate layers with cherries and whipped cream."
+  },
+  {
+    "id": 6,
+    "name": "Carrot Walnut Cake",
+    "category": "cakes",
+    "img": "https://via.placeholder.com/300x300?text=Carrot+Cake",
+    "price": 4600,
+    "description": "Spiced carrot cake loaded with walnuts and cream cheese icing."
+  },
+  {
+    "id": 7,
+    "name": "Classic Meat Pie",
+    "category": "pies",
+    "img": "https://via.placeholder.com/300x300?text=Meat+Pie",
+    "price": 600,
+    "description": "Flaky pastry filled with seasoned ground beef."
+  },
+  {
+    "id": 8,
+    "name": "Chicken & Mushroom Pie",
+    "category": "pies",
+    "img": "https://via.placeholder.com/300x300?text=Chicken+Pie",
+    "price": 750,
+    "description": "Savory pie with tender chicken and creamy mushroom filling."
+  },
+  {
+    "id": 9,
+    "name": "Apple Pie",
+    "category": "pies",
+    "img": "https://via.placeholder.com/300x300?text=Apple+Pie",
+    "price": 700,
+    "description": "Sweet and cinnamon-flavored apple filling with crisp crust."
+  },
+  {
+    "id": 10,
+    "name": "Minced Beef Pie",
+    "category": "pies",
+    "img": "https://via.placeholder.com/300x300?text=Beef+Pie",
+    "price": 650,
+    "description": "Juicy minced beef with herbs encased in golden pastry."
+  },
+  {
+    "id": 11,
+    "name": "Plain Roll",
+    "category": "rolls",
+    "img": "https://via.placeholder.com/300x300?text=Plain+Roll",
+    "price": 300,
+    "description": "Soft and fluffy plain roll baked to perfection."
+  },
+  {
+    "id": 12,
+    "name": "Cinnamon Roll",
+    "category": "rolls",
+    "img": "https://via.placeholder.com/300x300?text=Cinnamon+Roll",
+    "price": 350,
+    "description": "Warm roll swirled with cinnamon and topped with glaze."
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Roll",
+    "category": "rolls",
+    "img": "https://via.placeholder.com/300x300?text=Chocolate+Roll",
+    "price": 400,
+    "description": "Soft roll filled with smooth chocolate cream."
+  },
+  {
+    "id": 14,
+    "name": "Garlic Butter Roll",
+    "category": "rolls",
+    "img": "https://via.placeholder.com/300x300?text=Garlic+Roll",
+    "price": 320,
+    "description": "Buttery roll brushed with garlic butter and herbs."
+  },
+  {
+    "id": 15,
+    "name": "Grilled Chicken Chop",
+    "category": "chops",
+    "img": "https://via.placeholder.com/300x300?text=Chicken+Chop",
+    "price": 1200,
+    "description": "Succulent grilled chicken chop seasoned to perfection."
+  },
+  {
+    "id": 16,
+    "name": "Spicy Beef Chop",
+    "category": "chops",
+    "img": "https://via.placeholder.com/300x300?text=Beef+Chop",
+    "price": 1300,
+    "description": "Juicy beef chop with a spicy and smoky marinade."
+  },
+  {
+    "id": 17,
+    "name": "Fish Chop",
+    "category": "chops",
+    "img": "https://via.placeholder.com/300x300?text=Fish+Chop",
+    "price": 1100,
+    "description": "Crispy fried fish chop — perfect as a snack or light meal."
+  },
+  {
+    "id": 18,
+    "name": "Butter Cookie Pack",
+    "category": "cookies",
+    "img": "https://via.placeholder.com/300x300?text=Butter+Cookies",
+    "price": 2500,
+    "description": "A pack of buttery, crumbly cookies baked till golden."
+  },
+  {
+    "id": 19,
+    "name": "Chocolate Chip Cookies",
+    "category": "cookies",
+    "img": "https://via.placeholder.com/300x300?text=Chocolate+Chip+Cookies",
+    "price": 2700,
+    "description": "Classic cookies loaded with rich chocolate chips."
+  },
+  {
+    "id": 20,
+    "name": "Oatmeal Raisin Cookies",
+    "category": "cookies",
+    "img": "https://via.placeholder.com/300x300?text=Oatmeal+Cookies",
+    "price": 2600,
+    "description": "Soft oatmeal cookies studded with plump raisins."
+  }
+]
