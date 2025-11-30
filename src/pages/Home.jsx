@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Products from "./Products";
 import HeroCarousel from "../components/Hero";
+import Menu from "./Menu";
 
 
 const HomePage = () => {
@@ -54,7 +55,7 @@ const HomePage = () => {
   <button  className="text-[var(--text)] text-[1rem] hover:text-[var(--accent)] cursor-pointer font-bold">More...</button>
   </Link>
 </section>
-
+    <Menu/>
     </>
 
   );

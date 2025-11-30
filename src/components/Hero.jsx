@@ -77,7 +77,7 @@ export default function HeroCarousel() {
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
-            <div className="relative w-full h-[90vh] overflow-hidden">
+            <div className="relative w-full h-[80vh] overflow-hidden">
               <img
                 src={slide.img}
                 alt={slide.title}

@@ -38,6 +38,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-gray-400 text-sm ul">
             <li><a href="/" className="hover:text-white transition">Home</a></li>
+            <li><a href="/Menu" className="hover:text-white transition">Menu</a></li>
             <li><a href="/products" className="hover:text-white transition">Products</a></li>
             <li><a href="/about" className="hover:text-white transition">About Us</a></li>
             <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
@@ -78,7 +79,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-700 mt-6 py-4 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Angie’s Bakery — All Rights Reserved.
+        © {new Date().getFullYear()} <span><Link className="text-[var(--primary)]" to={"/"}>Angies cakes & treats</Link></span> — All Rights Reserved.
       </div>
     </footer>
     </> 

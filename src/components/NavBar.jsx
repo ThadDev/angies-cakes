@@ -6,11 +6,12 @@ import { useCart } from "../context/CartContext";
 const NavBar = () => {
   const menuItems = [
     { name: "Home", path: "/" },
+     { name: "Menu", path: "/Menu" },
     { name: "Pastries", path: "/products?category=pastries" },
     { name: "Chops", path: "/products?category=chops" },
     { name: "All", path: "/products" },
     { name: "About", path: "/About" },
-    { name: "Menu", path: "/Menu" },
+   
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
