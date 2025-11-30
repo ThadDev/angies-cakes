@@ -66,7 +66,7 @@ export default function ProductDetail() {
             {product.category}
           </p>
           <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-          <p className="text-gray-700 text-xl mb-4">
+          <p className="text-[var(--primary)] text-xl mb-4">
             ₦{Number(product.price).toLocaleString()}
           </p>
           <p className="text-gray-600 mb-6">{product.description}</p>
@@ -74,7 +74,7 @@ export default function ProductDetail() {
           {/* Add to Cart Button */}
           <button
             onClick={handleAddToCart}
-            className="bg-primary text-[var(--text)] cursor-pointer px-4 py-2 border rounded hover:bg-hover"
+            className="bg-[var(--primary)] text-[var(--text)] cursor-pointer px-4 py-2 border rounded hover:bg-hover"
           >
             Add to Cart
           </button>

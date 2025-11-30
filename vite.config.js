@@ -8,4 +8,7 @@ export default defineConfig({
    build: {
     outDir: "dist"
   },
+  server:{
+    allowedHosts: ['c0680b37b348.ngrok-free.app']
+  }
 })

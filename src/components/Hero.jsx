@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 // Preload first image for instant load
 const preloadImages = [
-  "/optimized/mobile/7.webp",
-  "/optimized/mobile/download (1).webp",
-  "/optimized/mobile/10.webp",
+  "/optimized/desktop/7.webp",
+  "/optimized/desktop/download.webp",
+  "/optimized/desktop/10.webp",
 ];
 
 // Preload images
@@ -19,17 +19,17 @@ preloadImages.forEach(src => {
 
 const slides = [
   {
-    img: "/assets/7.jpg",
+    img: "/optimized/mobile/7.webp",
     title: "Delicious chops",
     subtitle: "Every bite is a bliss",
   },
   {
-    img: "/assets/download (1).jpeg",
+    img: "/optimized/mobile/download.webp",
     title: "Fresh Pastries",
     subtitle: "Baked Daily with Love",
   },
   {
-    img: "/assets/10.jpg",
+    img: "/optimized/mobile/10.webp",
     title: "Delicious Cakes",
     subtitle: "Perfect for Any Event",
   },
@@ -38,10 +38,10 @@ const slides = [
 export default function HeroCarousel() {
   // Typing animation state
   const words = ["Cakes", "Pastries", "Chops", "Delights"];
-  const [text, setText] = useState("");
-  const [wordIndex, setWordIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [deleting, setDeleting] = useState(false);
+  // const [text, setText] = useState("");
+  // const [wordIndex, setWordIndex] = useState(0);
+  // const [charIndex, setCharIndex] = useState(0);
+  // const [deleting, setDeleting] = useState(false);
 
 //   useEffect(() => {
 //     const typeSpeed = deleting ? 150 : 150;
@@ -72,8 +72,8 @@ export default function HeroCarousel() {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 5000 }}
-        preloadImages={true} // preload slides
-        lazy={false} // disable lazy to force instant load
+        // preloadImages={true} // preload slides
+        // lazy={false} // disable lazy to force instant load
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
