@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo & About */}
         <div className="flex flex-col gap-4">
           <Link to={"/"}>
-          <h2 className="text-2xl font-bold text-white mb-3 logo-1">Angie’s Bakery</h2></Link>
+          <h2 className="text-2xl font-bold text-white mb-3 logo-1">Angie’s Cakes & treats</h2></Link>
           <p className="text-gray-400 text-sm leading-relaxed">
             Freshly baked cakes, pastries, chops and snacks — made with love 
             and delivered with care. Taste the difference today!

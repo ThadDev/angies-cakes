@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Meat Pie",
-    "category": "pastries",
+    "category": ["pastries","meatpie"],
     "img": "download",
     "price": 500,
     "description": "Savory pie with tender chicken and creamy  filling, ₦500 each."
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "name": "3 plain doughnuts",
-    "category": "pastries",
+    "category": ["pastries","doughnut"],
     "img": "11",
     "price": 2000,
     "description": "Soft and fluffy plain doughnuts baked to perfection."
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "name": "Box of 6 plain doughnuts",
-    "category": "pastries",
+    "category": ["pastries","doughnut"],
     "img": "23",
     "price": 4000,
     "description": "Soft and fluffy plain doughnuts baked to perfection."
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "name": "2 milky doughnuts",
-    "category": "pastries",
+    "category": ["pastries","doughnut"],
     "img": "20",
     "price": 3000,
     "description": "A snack of two milky doughnuts baked till golden"
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "name": "3 plain doughnuts",
-    "category": "pastries",
+    "category":["pastries","doughnut"] ,
     "img": "22",
     "price": 2000,
     "description": "Classic box of doughnuts , every bite is a feeling."
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "name": "Banana bread ",
-    "category": "pastries",
+    "category": ["pastries","banana-bread"],
     "img": "26",
     "price": 1500,
     "description": "Banana bread with oreo and coconut topping, 1500 each"
