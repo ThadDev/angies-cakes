@@ -10,7 +10,7 @@ import CathegoryFilter from "./components/BrowseCathegory";
 import { useToast } from "./context/ToastContext";
 import Toast from "./components/Toast";
 import ScrollToTop from "./components/ScrollToTop";
-import Menu from "./pages/Menu";
+
 
 // LAZY LOADED PAGES & COMPONENTS
 const CartPage = React.lazy(() => import("./pages/Cart"));
@@ -18,6 +18,7 @@ const Products = React.lazy(() => import("./pages/Products"));
 const ProductDetail = React.lazy(() => import("./pages/ProductDetails"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const OrderPage = React.lazy(() => import("./pages/Checkout"));
+const Menu = React.lazy(() => import("./pages/Menu"));
 
 
 
