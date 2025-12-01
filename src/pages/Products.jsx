@@ -26,7 +26,7 @@ export default function Products({ limit, title }) {
       .catch(err => {
         console.error("Failed to fetch products:", err);
         setLoading(false);
-      });},1000)
+      });},100)
   }, []);
 
   // Apply search + category filter
@@ -54,18 +54,6 @@ export default function Products({ limit, title }) {
   return matchesCategory && matchesSearch;
 });
 
-//   const filtered = products.filter(product => {
-//     const matchesCategory = categoryQuery
-//       ? product.category.toLowerCase() === categoryQuery.toLowerCase()
-//       : true;
-
-//     const matchesSearch = searchQuery
-//       ? product.name.toLowerCase().includes(searchQuery.toLowerCase()) || product.category.toLowerCase().includes(searchQuery.toLowerCase())
-//       : true;
-
-//     return matchesCategory && matchesSearch;
-//   });
-
   // Apply limit ONLY after filtering
   const finalProducts = limit ? filtered.slice(0, limit) : filtered;
 
@@ -86,7 +74,7 @@ export default function Products({ limit, title }) {
       )}
 
       {loading ? (
-        <ShimmerGrid count={8} />
+        <ShimmerGrid count={20} />
       ) : finalProducts.length === 0 ? (
         <p>No products found.</p>
       ) : (

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
@@ -54,7 +54,11 @@ const NavBar = () => {
                 key={index}
                 className="hover:text-[var(--hover)] text-[var(--text)] hover:scale-105 font-bold transition duration-200 cursor-pointer"
               >
-                <Link to={item.path}>{item.name}</Link>
+                 <NavLink to={item.path} className={({ isActive }) =>
+        isActive ? "text-[var(--hover)]" : "text-[var(--text)]"
+      }>
+        {item.name}
+      </NavLink>
               </li>
             ))}
           </ul>
